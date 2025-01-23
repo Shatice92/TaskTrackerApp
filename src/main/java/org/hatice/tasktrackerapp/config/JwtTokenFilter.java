@@ -22,11 +22,11 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 	@Autowired
 	private JwtUserDetails jwtUserDetails;
 	
-	@Override
-	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-		String path = request.getServletPath();
-		return path.equals("/v1/dev/main/v1/dev/register") || path.equals("/v1/dev/main/v1/dev/login") || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs");
-	}
+//	@Override
+//	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+//		String path = request.getServletPath();
+//		return path.equals("/v1/dev/users/register") || path.equals("/v1/dev/users/login") || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs");
+//	}
 	
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)

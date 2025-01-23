@@ -106,4 +106,17 @@ public class UsersController {
 	}
 	
 	
+	@GetMapping(GETPROFILEBYTOKEN)
+	public ResponseEntity<BaseResponse<User>> getProfile(String token){
+		return ResponseEntity.ok(
+				BaseResponse.<User>builder()
+				            .code(200)
+				            .data(usersService.getProfile(token))
+				            .message("User profile retrieved successfully.")
+				            .success(true)
+				            .build()
+		);
+	}
+	
+	
 }

@@ -12,7 +12,8 @@ public enum ErrorType {
 	TASKLIST_EMPTY(2002, "Tasklist is Empty", HttpStatus.NOT_FOUND),
 	VALIDATION_ERROR(400,"Validation Errors, Please check validation rules",HttpStatus.BAD_REQUEST),
 	INTERNAL_SERVER_ERROR(500,"Server Error, Try Again Later",HttpStatus.INTERNAL_SERVER_ERROR),
-	USERLIST_IS_EMPTY(1002, "Userlist is Empty", HttpStatus.NOT_FOUND);
+	USERLIST_IS_EMPTY(1002, "Userlist is Empty", HttpStatus.NOT_FOUND),
+	INVALID_TOKEN(5000,"Invalid Token",HttpStatus.BAD_REQUEST );
 	
 	int code;
 	String message;

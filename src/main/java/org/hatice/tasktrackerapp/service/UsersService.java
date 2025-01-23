@@ -31,7 +31,6 @@ import java.util.Optional;
 public class UsersService {
 	private final UsersRepository usersRepository;
 	private final JwtManager jwtManager;
-	private AuthenticationManager authenticationManager;
 	
 	public List<User> findAll() {
 		List<User> allUsers = usersRepository.findAll();
@@ -88,11 +87,19 @@ public class UsersService {
 		Optional<User> userOptional = usersRepository.findOptionalByUsernameAndPassword(dto.username(),
 		                                                                                dto.password());
 		if (userOptional.isEmpty()) throw new TaskTrackerException(ErrorType.USER_NOTFOUND);
-			Authentication authenticate =
-					authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(dto.username(),
-					                                                                           dto.password()));
-			SecurityContextHolder.getContext().setAuthentication(authenticate);
 		String token = jwtManager.createToken(userOptional.get().getId());
 		return token;
 	}
+	
+	public User getProfile(String token) {
+		Optional<Long> optionalUserId = jwtManager.validateToken(token);
+		System.out.println("optionalUserId:" + optionalUserId);
+		if (optionalUserId.isEmpty()) throw new TaskTrackerException(ErrorType.INVALID_TOKEN);
+		Optional<User> optionalUser = usersRepository.findById(optionalUserId.get());
+		if (optionalUser.isEmpty()) throw new TaskTrackerException(ErrorType.USER_NOTFOUND);
+		
+		return optionalUser.get();
+	}
+	
+	
 }

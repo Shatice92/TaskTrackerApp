@@ -378,3 +378,44 @@ java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: jav
 2025-01-23T16:35:47.817+03:00  INFO 18020 --- [main] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
 2025-01-23T16:35:51.172+03:00 DEBUG 18020 --- [main] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
 2025-01-23T16:35:51.695+03:00  INFO 18020 --- [main] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 4.385 seconds (process running for 5.036)
+2025-01-23T16:55:47.992+03:00  INFO 2460 --- [main] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 2460 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T16:55:47.994+03:00 DEBUG 2460 --- [main] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T16:55:47.995+03:00  INFO 2460 --- [main] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T16:55:51.649+03:00 DEBUG 2460 --- [main] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T16:55:52.241+03:00  INFO 2460 --- [main] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 4.879 seconds (process running for 5.642)
+2025-01-23T16:56:22.786+03:00  INFO 2460 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : JwtTokenFilter doFilterInternal çalıştı...
+2025-01-23T16:56:22.787+03:00  WARN 2460 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : Gelen Token: null
+2025-01-23T17:02:27.062+03:00  INFO 24756 --- [main] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 24756 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T17:02:27.065+03:00 DEBUG 24756 --- [main] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T17:02:27.065+03:00  INFO 24756 --- [main] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T17:02:30.711+03:00 DEBUG 24756 --- [main] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T17:02:31.254+03:00  INFO 24756 --- [main] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 4.706 seconds (process running for 5.433)
+2025-01-23T17:08:22.337+03:00  INFO 2212 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 2212 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T17:08:22.340+03:00 DEBUG 2212 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T17:08:22.341+03:00  INFO 2212 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T17:08:26.399+03:00 DEBUG 2212 --- [restartedMain] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T17:08:27.136+03:00  INFO 2212 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 5.647 seconds (process running for 6.966)
+2025-01-23T17:11:13.167+03:00  INFO 23236 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 23236 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T17:11:13.169+03:00 DEBUG 23236 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T17:11:13.170+03:00  INFO 23236 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T17:11:16.737+03:00 DEBUG 23236 --- [restartedMain] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T17:11:17.447+03:00  INFO 23236 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 4.824 seconds (process running for 5.648)
+2025-01-23T17:11:32.312+03:00  INFO 23236 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : JwtTokenFilter doFilterInternal çalıştı...
+2025-01-23T17:11:32.312+03:00  WARN 23236 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : Gelen Token: null
+2025-01-23T17:12:51.950+03:00  INFO 16848 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 16848 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T17:12:51.952+03:00 DEBUG 16848 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T17:12:51.952+03:00  INFO 16848 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T17:12:55.832+03:00 DEBUG 16848 --- [restartedMain] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T17:12:56.595+03:00  INFO 16848 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 5.155 seconds (process running for 5.994)
+2025-01-23T17:16:26.967+03:00  INFO 11620 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Starting TaskTrackerAppApplication using Java 21.0.4 with PID 11620 (C:\Users\Sinan\Desktop\Java16\TaskTrackerApp\build\classes\java\main started by Sinan in C:\Users\Sinan\Desktop\Java16\TaskTrackerApp)
+2025-01-23T17:16:26.968+03:00 DEBUG 11620 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-23T17:16:26.969+03:00  INFO 11620 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-01-23T17:16:30.533+03:00 DEBUG 11620 --- [restartedMain] o.h.t.config.JwtTokenFilter              : Filter 'getJwtTokenFilter' configured for use
+2025-01-23T17:16:31.234+03:00  INFO 11620 --- [restartedMain] o.h.t.TaskTrackerAppApplication          : Started TaskTrackerAppApplication in 4.765 seconds (process running for 5.658)
+2025-01-23T17:16:50.384+03:00  INFO 11620 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : JwtTokenFilter doFilterInternal çalıştı...
+2025-01-23T17:16:50.384+03:00  WARN 11620 --- [http-nio-9090-exec-1] o.h.t.config.JwtTokenFilter              : Gelen Token: null
+2025-01-23T17:17:27.629+03:00  INFO 11620 --- [http-nio-9090-exec-3] o.h.t.config.JwtTokenFilter              : JwtTokenFilter doFilterInternal çalıştı...
+2025-01-23T17:17:27.629+03:00  WARN 11620 --- [http-nio-9090-exec-3] o.h.t.config.JwtTokenFilter              : Gelen Token: null
+2025-01-23T17:17:27.663+03:00 ERROR 11620 --- [http-nio-9090-exec-3] o.h.t.exception.GlobalExceptionHandler   : All errors occur at :Validation Errors, Please check validation rules[username Validation Error: boş değer olamaz]
+2025-01-23T17:17:57.655+03:00  INFO 11620 --- [http-nio-9090-exec-2] o.h.t.config.JwtTokenFilter              : JwtTokenFilter doFilterInternal çalıştı...
+2025-01-23T17:17:57.655+03:00  WARN 11620 --- [http-nio-9090-exec-2] o.h.t.config.JwtTokenFilter              : Gelen Token: null

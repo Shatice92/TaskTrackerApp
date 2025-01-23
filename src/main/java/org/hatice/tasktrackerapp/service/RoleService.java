@@ -21,12 +21,12 @@ public class RoleService {
 		roleRepository.save(role);
 	}
 	
-	public Role findRolesById(Long userId) {
+	public List<Role> findRolesById(Long userId) {
 		User userById = usersService.getUserById(userId);
 		if (userById == null) {
 			throw new TaskTrackerException(ErrorType.USER_NOTFOUND);
 		}
-		return roleRepository.getRoleByUserId(userId);
+		return roleRepository.findAllByUserId(userId);
 	}
 	
 	public List<Role> findAll() {

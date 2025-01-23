@@ -14,12 +14,11 @@ public class SecurityConfig {
 	
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+		
 		http.authorizeHttpRequests(req -> {
-			req
-					.requestMatchers("swagger-ui/**", "/v3/api-docs/**")
-					.permitAll()
-					.requestMatchers("/admin/**", "/v1/dev/users/v1/dev/list").hasAuthority("ADMIN").anyRequest()
-					.authenticated(); //oturum açma zorunluluğu getirdik. 403 hatası gönderir.
+			req.requestMatchers("swagger-ui/**", "/v3/api-docs/**", "/v1/dev/users/register", "/v1/dev/users/login")
+			   .permitAll().requestMatchers("/admin/**", "/v1/dev/users/list").hasAuthority("ADMIN").anyRequest()
+			   .authenticated();
 		});
 		http.csrf(AbstractHttpConfigurer::disable);
 		http.addFilterBefore(getJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);

@@ -34,10 +34,10 @@ public class RoleController {
 	
 	
 	@GetMapping(GETBYID)
-	public ResponseEntity<BaseResponse<Role>> getRolesByUserId(@PathVariable Long userId) {
-		Role role = roleService.findRolesById(userId);
-		return ResponseEntity.ok(BaseResponse.<Role>builder().data(role).code(200).success(true)
-		                                     .message("user'S role retrieved").build());
+	public ResponseEntity<BaseResponse<List<Role>>> getRolesByUserId(@PathVariable Long userId) {
+		List<Role> rolesById = roleService.findRolesById(userId);
+		return ResponseEntity.ok(BaseResponse.<List<Role>>builder().data(rolesById).code(200).success(true)
+		                                     .message("user'S roles retrieved").build());
 	}
 	
 	
